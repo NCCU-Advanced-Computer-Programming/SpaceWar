@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApplication7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="820" Width="1156" PreviewKeyDown="Window_PreviewKeyDown" PreviewKeyUp="Window_PreviewKeyUp" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/backg1.jpg"/>
+    </Window.Background>
+    <Grid Name="mainGrid">
+
+
+
+        <Grid x:Name="ugdBoard"  Height="780" Width="1140" >
+            <Grid.Background>
+                <ImageBrush/>
+            </Grid.Background>
+
+
+
+        </Grid>
+        <Image x:Name="startMenu" Source="Images\startMenu.png" Panel.ZIndex="3" />
+        <Image x:Name="player0" HorizontalAlignment="Left" Height="60" Margin="150,80,0,0" VerticalAlignment="Top" Width="60" Panel.ZIndex="3" Source="Images/down.png"/>
+
+        <Image x:Name="player1" HorizontalAlignment="Left" Height="60" Margin="340,400,0,0" VerticalAlignment="Top" Width="60" Panel.ZIndex="3" Source="Images/down.png"/>
+        <Label x:Name="life0" Content="血量:" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="40,650,0,0" Height="50" Width="200" FontSize="30" Foreground="#FFFBFBFB" FontWeight="Bold"/>
+        <Label x:Name="life1" Content="血量:" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="910,650,0,0" Height="50" Width="200" FontSize="30" Foreground="#FFFBFBFB" FontWeight="Bold"/>
+        <Button x:Name="startBtn" Content="     " Click="Button_Click"  Panel.ZIndex="5" Background="{x:Null}" Opacity="0"  Margin="310,543,264,0"/>
+
+
+
+
+
+
+    </Grid>
+</Window>
